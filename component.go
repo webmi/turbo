@@ -13,6 +13,7 @@ type Components struct {
 	routers            map[int]*mux.Router
 	convertorMap       map[string]Convertor
 	errorHandler       ErrorHandlerFunc
+	registeredComponents map[string]interface{}
 }
 
 // Reset resets all component mappings
